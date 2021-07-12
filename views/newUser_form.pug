@@ -1,0 +1,68 @@
+extends mainPage
+block content
+    form(action='/users' method='POST')
+      .form-group
+        label(for='firstname')  First Name 
+        input.form-control(type='text' name='firstname')
+      .form-group
+        label(for='lastName')  Last Name 
+        input.form-control(type='text' name='lastname')
+      .form-group
+        label(for='email')  Email 
+        input.form-control(type='email' name='email')
+      .form-group
+        label(for='password')  Password 
+        input.form-control(type='text' name='password')
+      .form-group
+        input.btn(type='submit' value='Add user')
+        nav
+          p
+           a(href='/') MAIN PAGE
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//-   form(action='/users' method='POST')
+//-      .form-group
+//-          label(for='name')  First Name
+//-          input#name(type='text' name='user_name')
+//-      .form-group
+//-          label(for='surname') Last Name 
+//-          input#surname(type='text' name='surname')
+//-      .form-group
+//-          label(for='mail') Email 
+//-          input#mail(type='email' name='user_email')
+//-      .form-group
+//-          label(for='password')  Password 
+//-          input.form-control(type='text' name='password')
+//-      .form-group
+//-          input.btn(type='submit' value='Add user')
+//-          | Add user
+//-          nav
+//-             p 
+//-              a(href="/" ) Main Page

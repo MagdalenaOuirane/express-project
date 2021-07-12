@@ -1,0 +1,20 @@
+extends mainPage
+block content
+    form(action='/schedules' method='POST')
+      .form-group
+        label(for='user_id')  User ID 
+        input.form-control(type='number' name='user_id')
+      .form-group
+        label(for='day')  Day 
+        input.form-control(type='text' name='day')
+      .form-group
+        label(for='start_at')  Start 
+        input.form-control(type='text' name='start_at')
+      .form-group
+        label(for='end_at')  End 
+        input.form-control(type='text' name='end_at')
+      .form-group
+        input.btn(type='submit' value='Add schedule')
+        nav
+          p
+           a(href='/') MAIN PAGE

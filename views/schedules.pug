@@ -1,0 +1,15 @@
+extends mainPage
+
+block content
+        ul 
+          each schedule in schedules
+           br
+           li Schedule: Id : #{schedule.user_id},
+           li Day: #{schedule.day},
+           li Start: #{schedule.start_at},
+           li End: #{schedule.end_at}
+
+        
+          nav
+             p 
+                 a(href="/" ) MAIN PAGE

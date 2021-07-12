@@ -1,0 +1,16 @@
+extends mainPage
+    
+block content
+        ul 
+          each user in users
+           br
+           li User: FirstName : #{user.firstname},
+           li LastName:  #{user.lastname},
+           li Email: #{user.email},
+           li Password: #{user.password}
+           
+
+        
+          nav
+             p 
+                 a(href="/" ) MAIN PAGE

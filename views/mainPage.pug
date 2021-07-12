@@ -1,0 +1,29 @@
+doctype html
+html
+    head
+        title #{title}
+        style
+            include ../static/style.css
+    body
+       header
+            h1 Data Page
+            p Schedule Website
+            hr
+    body 
+    block content 
+         
+       nav
+              ul
+                 li 
+                   a(href="/users" ) users 
+                 li
+                   a(href="/schedules") schedules
+                 li
+                  a(href="/user") user 
+                 li
+                  a(href="/userSchedule") user schedule 
+                 li
+                  a(href="/users/new") new user 
+                 li
+                  a(href="/schedules/new") new schedule
+                             
